@@ -1,0 +1,78 @@
+# ================================================================
+# DISCORD BOT MONSTER - REQUIREMENTS
+# ================================================================
+# Python 3.11+
+# Date: 2026-01-02
+# ================================================================
+
+# === CORE DISCORD ===
+discord.py==2.3.2
+py-cord==2.5.0  # Alternative Discord lib (buttons, selects)
+
+# === ASYNCIO & HTTP ===
+aiohttp==3.9.1
+aiofiles==23.2.1
+httpx==0.25.2
+
+# === DATABASE ===
+asyncpg==0.29.0          # PostgreSQL async
+psycopg2-binary==2.9.9   # PostgreSQL sync (backup scripts)
+
+# === CACHE & QUEUE ===
+redis==5.0.1
+aioredis==2.0.1
+
+# === CONFIGURATION ===
+python-dotenv==1.0.0
+pyyaml==6.0.1
+
+# === API REST ===
+fastapi==0.108.0        # API REST moderne (alternative aiohttp)
+uvicorn==0.25.0         # ASGI server pour FastAPI
+starlette==0.32.0
+
+# === GOOGLE APIS (Optionnel) ===
+google-auth==2.25.2
+google-auth-oauthlib==1.2.0
+google-api-python-client==2.111.0
+
+# === UTILITIES ===
+python-dateutil==2.8.2
+pytz==2023.3.post1
+humanize==4.9.0         # Dates/tailles lisibles
+emoji==2.9.0            # Gestion emojis
+
+# === LOGGING & MONITORING ===
+structlog==24.1.0       # Logging structuré JSON
+prometheus-client==0.19.0  # Métriques Prometheus
+sentry-sdk==1.39.1      # Error tracking (optionnel)
+
+# === DATA VALIDATION ===
+pydantic==2.5.3         # Validation données API
+marshmallow==3.20.1
+
+# === CLI ===
+click==8.1.7            # Scripts CLI
+rich==13.7.0            # Output CLI coloré
+tabulate==0.9.0         # Tables CLI
+
+# === RATE LIMITING ===
+slowapi==0.1.9          # Rate limiting API REST
+
+# === CRON & SCHEDULING ===
+apscheduler==3.10.4     # Tâches planifiées
+
+# === MARKDOWN & PARSING ===
+markdown==3.5.1
+beautifulsoup4==4.12.2
+lxml==5.0.0
+
+# === IMAGE MANIPULATION (Optionnel) ===
+Pillow==10.1.0          # Génération images stats
+
+# === TESTING & DEV (Optionnel) ===
+pytest==7.4.3
+pytest-asyncio==0.21.1
+black==23.12.1
+flake8==7.0.0
+mypy==1.7.1
